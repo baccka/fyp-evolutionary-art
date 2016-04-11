@@ -1,0 +1,3 @@
+[submodule "dependencies/fyp-genetic-programming"]
+	path = dependencies/fyp-genetic-programming
+	url = https://github.com/baccka/fyp-genetic-programming
