@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAB8CFC61CBC51450008C2B6 /* imageGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFB71CBC51450008C2B6 /* imageGenerator.h */; };
+		FAB8CFC71CBC51450008C2B6 /* geneticArtist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFB81CBC51450008C2B6 /* geneticArtist.cpp */; };
+		FAB8CFC81CBC51450008C2B6 /* opencl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFB91CBC51450008C2B6 /* opencl.cpp */; };
+		FAB8CFC91CBC51450008C2B6 /* clGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFBA1CBC51450008C2B6 /* clGenerator.h */; };
+		FAB8CFCA1CBC51450008C2B6 /* opencl.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFBB1CBC51450008C2B6 /* opencl.h */; };
+		FAB8CFCB1CBC51450008C2B6 /* clGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFBC1CBC51450008C2B6 /* clGenerator.cpp */; };
+		FAB8CFCC1CBC51450008C2B6 /* ephemerals.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFBD1CBC51450008C2B6 /* ephemerals.h */; };
+		FAB8CFCD1CBC51450008C2B6 /* ephemerals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFBE1CBC51450008C2B6 /* ephemerals.cpp */; };
+		FAB8CFCE1CBC51450008C2B6 /* image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFBF1CBC51450008C2B6 /* image.cpp */; };
+		FAB8CFCF1CBC51450008C2B6 /* image.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFC01CBC51450008C2B6 /* image.h */; };
+		FAB8CFD01CBC51450008C2B6 /* clFitnessMetric.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFC11CBC51450008C2B6 /* clFitnessMetric.h */; };
+		FAB8CFD11CBC51450008C2B6 /* clFitnessMetric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFC21CBC51450008C2B6 /* clFitnessMetric.cpp */; };
+		FAB8CFD21CBC51450008C2B6 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFC31CBC51450008C2B6 /* options.h */; };
+		FAB8CFD31CBC51450008C2B6 /* cl2.hpp in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFC41CBC51450008C2B6 /* cl2.hpp */; };
+		FAB8CFD41CBC51450008C2B6 /* stb-image.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFC51CBC51450008C2B6 /* stb-image.h */; };
+		FAB8CFD91CBC515F0008C2B6 /* clGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFD61CBC515F0008C2B6 /* clGenerator.cpp */; };
+		FAB8CFDA1CBC515F0008C2B6 /* functions.cl in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFD71CBC515F0008C2B6 /* functions.cl */; };
+		FAB8CFDB1CBC515F0008C2B6 /* pixelFunctionGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFD81CBC515F0008C2B6 /* pixelFunctionGenerator.h */; };
+		FAB8CFDD1CBC51740008C2B6 /* geneticArtist.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFDC1CBC51740008C2B6 /* geneticArtist.h */; };
+		FAB8CFE41CBC51980008C2B6 /* clImageMirrorMetric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFDF1CBC51980008C2B6 /* clImageMirrorMetric.cpp */; };
+		FAB8CFE51CBC51980008C2B6 /* coreFitnessMetrics.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFE01CBC51980008C2B6 /* coreFitnessMetrics.h */; };
+		FAB8CFE61CBC51980008C2B6 /* clFractalDimensionMetric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFE11CBC51980008C2B6 /* clFractalDimensionMetric.cpp */; };
+		FAB8CFE71CBC51980008C2B6 /* clImageDifferenceMetric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFE21CBC51980008C2B6 /* clImageDifferenceMetric.cpp */; };
+		FAB8CFE81CBC51980008C2B6 /* clColorGradientMetric.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFE31CBC51980008C2B6 /* clColorGradientMetric.cpp */; };
+		FAB8CFEC1CBC51A80008C2B6 /* imageFilters.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB8CFEA1CBC51A80008C2B6 /* imageFilters.h */; };
+		FAB8CFED1CBC51A80008C2B6 /* clSobel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAB8CFEB1CBC51A80008C2B6 /* clSobel.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FAB8CFA81CBC4FDC0008C2B6 /* libfyp-evolutionary-art.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libfyp-evolutionary-art.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB8CFB71CBC51450008C2B6 /* imageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageGenerator.h; sourceTree = "<group>"; };
+		FAB8CFB81CBC51450008C2B6 /* geneticArtist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = geneticArtist.cpp; sourceTree = "<group>"; };
+		FAB8CFB91CBC51450008C2B6 /* opencl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = opencl.cpp; path = core/opencl.cpp; sourceTree = "<group>"; };
+		FAB8CFBA1CBC51450008C2B6 /* clGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = clGenerator.h; path = core/clGenerator.h; sourceTree = "<group>"; };
+		FAB8CFBB1CBC51450008C2B6 /* opencl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opencl.h; path = core/opencl.h; sourceTree = "<group>"; };
+		FAB8CFBC1CBC51450008C2B6 /* clGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clGenerator.cpp; path = core/clGenerator.cpp; sourceTree = "<group>"; };
+		FAB8CFBD1CBC51450008C2B6 /* ephemerals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ephemerals.h; path = core/ephemerals.h; sourceTree = "<group>"; };
+		FAB8CFBE1CBC51450008C2B6 /* ephemerals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ephemerals.cpp; path = core/ephemerals.cpp; sourceTree = "<group>"; };
+		FAB8CFBF1CBC51450008C2B6 /* image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = image.cpp; path = core/image.cpp; sourceTree = "<group>"; };
+		FAB8CFC01CBC51450008C2B6 /* image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = image.h; path = core/image.h; sourceTree = "<group>"; };
+		FAB8CFC11CBC51450008C2B6 /* clFitnessMetric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = clFitnessMetric.h; path = core/clFitnessMetric.h; sourceTree = "<group>"; };
+		FAB8CFC21CBC51450008C2B6 /* clFitnessMetric.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clFitnessMetric.cpp; path = core/clFitnessMetric.cpp; sourceTree = "<group>"; };
+		FAB8CFC31CBC51450008C2B6 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = options.h; path = core/options.h; sourceTree = "<group>"; };
+		FAB8CFC41CBC51450008C2B6 /* cl2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cl2.hpp; sourceTree = "<group>"; };
+		FAB8CFC51CBC51450008C2B6 /* stb-image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "stb-image.h"; sourceTree = "<group>"; };
+		FAB8CFD61CBC515F0008C2B6 /* clGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clGenerator.cpp; path = pixelFunctionGenerator/clGenerator.cpp; sourceTree = "<group>"; };
+		FAB8CFD71CBC515F0008C2B6 /* functions.cl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.opencl; name = functions.cl; path = pixelFunctionGenerator/functions.cl; sourceTree = "<group>"; };
+		FAB8CFD81CBC515F0008C2B6 /* pixelFunctionGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pixelFunctionGenerator.h; path = pixelFunctionGenerator/pixelFunctionGenerator.h; sourceTree = "<group>"; };
+		FAB8CFDC1CBC51740008C2B6 /* geneticArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geneticArtist.h; sourceTree = "<group>"; };
+		FAB8CFDF1CBC51980008C2B6 /* clImageMirrorMetric.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clImageMirrorMetric.cpp; path = coreFitnessMetrics/clImageMirrorMetric.cpp; sourceTree = "<group>"; };
+		FAB8CFE01CBC51980008C2B6 /* coreFitnessMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coreFitnessMetrics.h; path = coreFitnessMetrics/coreFitnessMetrics.h; sourceTree = "<group>"; };
+		FAB8CFE11CBC51980008C2B6 /* clFractalDimensionMetric.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clFractalDimensionMetric.cpp; path = coreFitnessMetrics/clFractalDimensionMetric.cpp; sourceTree = "<group>"; };
+		FAB8CFE21CBC51980008C2B6 /* clImageDifferenceMetric.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clImageDifferenceMetric.cpp; path = coreFitnessMetrics/clImageDifferenceMetric.cpp; sourceTree = "<group>"; };
+		FAB8CFE31CBC51980008C2B6 /* clColorGradientMetric.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clColorGradientMetric.cpp; path = coreFitnessMetrics/clColorGradientMetric.cpp; sourceTree = "<group>"; };
+		FAB8CFEA1CBC51A80008C2B6 /* imageFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imageFilters.h; path = imageFilters/imageFilters.h; sourceTree = "<group>"; };
+		FAB8CFEB1CBC51A80008C2B6 /* clSobel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = clSobel.cpp; path = imageFilters/clSobel.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB8CFA51CBC4FDC0008C2B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAB8CF9F1CBC4FDC0008C2B6 = {
+			isa = PBXGroup;
+			children = (
+				FAB8CFAA1CBC4FDC0008C2B6 /* fyp-evolutionary-art */,
+				FAB8CFA91CBC4FDC0008C2B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB8CFA91CBC4FDC0008C2B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8CFA81CBC4FDC0008C2B6 /* libfyp-evolutionary-art.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB8CFAA1CBC4FDC0008C2B6 /* fyp-evolutionary-art */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8CFE91CBC519B0008C2B6 /* imageFilters */,
+				FAB8CFDE1CBC51810008C2B6 /* coreFitnessMetrics */,
+				FAB8CFDC1CBC51740008C2B6 /* geneticArtist.h */,
+				FAB8CFD51CBC51490008C2B6 /* pixelFunctionGenerator */,
+				FAB8CFB61CBC512C0008C2B6 /* core */,
+			);
+			path = "fyp-evolutionary-art";
+			sourceTree = "<group>";
+		};
+		FAB8CFB61CBC512C0008C2B6 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8CFB71CBC51450008C2B6 /* imageGenerator.h */,
+				FAB8CFB81CBC51450008C2B6 /* geneticArtist.cpp */,
+				FAB8CFB91CBC51450008C2B6 /* opencl.cpp */,
+				FAB8CFBA1CBC51450008C2B6 /* clGenerator.h */,
+				FAB8CFBB1CBC51450008C2B6 /* opencl.h */,
+				FAB8CFBC1CBC51450008C2B6 /* clGenerator.cpp */,
+				FAB8CFBD1CBC51450008C2B6 /* ephemerals.h */,
+				FAB8CFBE1CBC51450008C2B6 /* ephemerals.cpp */,
+				FAB8CFBF1CBC51450008C2B6 /* image.cpp */,
+				FAB8CFC01CBC51450008C2B6 /* image.h */,
+				FAB8CFC11CBC51450008C2B6 /* clFitnessMetric.h */,
+				FAB8CFC21CBC51450008C2B6 /* clFitnessMetric.cpp */,
+				FAB8CFC31CBC51450008C2B6 /* options.h */,
+				FAB8CFC41CBC51450008C2B6 /* cl2.hpp */,
+				FAB8CFC51CBC51450008C2B6 /* stb-image.h */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		FAB8CFD51CBC51490008C2B6 /* pixelFunctionGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8CFD61CBC515F0008C2B6 /* clGenerator.cpp */,
+				FAB8CFD71CBC515F0008C2B6 /* functions.cl */,
+				FAB8CFD81CBC515F0008C2B6 /* pixelFunctionGenerator.h */,
+			);
+			name = pixelFunctionGenerator;
+			sourceTree = "<group>";
+		};
+		FAB8CFDE1CBC51810008C2B6 /* coreFitnessMetrics */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8CFDF1CBC51980008C2B6 /* clImageMirrorMetric.cpp */,
+				FAB8CFE01CBC51980008C2B6 /* coreFitnessMetrics.h */,
+				FAB8CFE11CBC51980008C2B6 /* clFractalDimensionMetric.cpp */,
+				FAB8CFE21CBC51980008C2B6 /* clImageDifferenceMetric.cpp */,
+				FAB8CFE31CBC51980008C2B6 /* clColorGradientMetric.cpp */,
+			);
+			name = coreFitnessMetrics;
+			sourceTree = "<group>";
+		};
+		FAB8CFE91CBC519B0008C2B6 /* imageFilters */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8CFEA1CBC51A80008C2B6 /* imageFilters.h */,
+				FAB8CFEB1CBC51A80008C2B6 /* clSobel.cpp */,
+			);
+			name = imageFilters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FAB8CFA61CBC4FDC0008C2B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB8CFD21CBC51450008C2B6 /* options.h in Headers */,
+				FAB8CFCC1CBC51450008C2B6 /* ephemerals.h in Headers */,
+				FAB8CFCF1CBC51450008C2B6 /* image.h in Headers */,
+				FAB8CFEC1CBC51A80008C2B6 /* imageFilters.h in Headers */,
+				FAB8CFD01CBC51450008C2B6 /* clFitnessMetric.h in Headers */,
+				FAB8CFCA1CBC51450008C2B6 /* opencl.h in Headers */,
+				FAB8CFC61CBC51450008C2B6 /* imageGenerator.h in Headers */,
+				FAB8CFD31CBC51450008C2B6 /* cl2.hpp in Headers */,
+				FAB8CFDD1CBC51740008C2B6 /* geneticArtist.h in Headers */,
+				FAB8CFDB1CBC515F0008C2B6 /* pixelFunctionGenerator.h in Headers */,
+				FAB8CFC91CBC51450008C2B6 /* clGenerator.h in Headers */,
+				FAB8CFE51CBC51980008C2B6 /* coreFitnessMetrics.h in Headers */,
+				FAB8CFD41CBC51450008C2B6 /* stb-image.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FAB8CFA71CBC4FDC0008C2B6 /* fyp-evolutionary-art */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB8CFB31CBC4FDC0008C2B6 /* Build configuration list for PBXNativeTarget "fyp-evolutionary-art" */;
+			buildPhases = (
+				FAB8CFA41CBC4FDC0008C2B6 /* Sources */,
+				FAB8CFA51CBC4FDC0008C2B6 /* Frameworks */,
+				FAB8CFA61CBC4FDC0008C2B6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fyp-evolutionary-art";
+			productName = "fyp-evolutionary-art";
+			productReference = FAB8CFA81CBC4FDC0008C2B6 /* libfyp-evolutionary-art.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB8CFA01CBC4FDC0008C2B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = baccka;
+				TargetAttributes = {
+					FAB8CFA71CBC4FDC0008C2B6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = FAB8CFA31CBC4FDC0008C2B6 /* Build configuration list for PBXProject "fyp-evolutionary-art" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAB8CF9F1CBC4FDC0008C2B6;
+			productRefGroup = FAB8CFA91CBC4FDC0008C2B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB8CFA71CBC4FDC0008C2B6 /* fyp-evolutionary-art */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB8CFA41CBC4FDC0008C2B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB8CFE71CBC51980008C2B6 /* clImageDifferenceMetric.cpp in Sources */,
+				FAB8CFCB1CBC51450008C2B6 /* clGenerator.cpp in Sources */,
+				FAB8CFE61CBC51980008C2B6 /* clFractalDimensionMetric.cpp in Sources */,
+				FAB8CFD91CBC515F0008C2B6 /* clGenerator.cpp in Sources */,
+				FAB8CFDA1CBC515F0008C2B6 /* functions.cl in Sources */,
+				FAB8CFCD1CBC51450008C2B6 /* ephemerals.cpp in Sources */,
+				FAB8CFCE1CBC51450008C2B6 /* image.cpp in Sources */,
+				FAB8CFED1CBC51A80008C2B6 /* clSobel.cpp in Sources */,
+				FAB8CFC81CBC51450008C2B6 /* opencl.cpp in Sources */,
+				FAB8CFE41CBC51980008C2B6 /* clImageMirrorMetric.cpp in Sources */,
+				FAB8CFC71CBC51450008C2B6 /* geneticArtist.cpp in Sources */,
+				FAB8CFE81CBC51980008C2B6 /* clColorGradientMetric.cpp in Sources */,
+				FAB8CFD11CBC51450008C2B6 /* clFitnessMetric.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FAB8CFB11CBC4FDC0008C2B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FAB8CFB21CBC4FDC0008C2B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FAB8CFB41CBC4FDC0008C2B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAB8CFB51CBC4FDC0008C2B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB8CFA31CBC4FDC0008C2B6 /* Build configuration list for PBXProject "fyp-evolutionary-art" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB8CFB11CBC4FDC0008C2B6 /* Debug */,
+				FAB8CFB21CBC4FDC0008C2B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB8CFB31CBC4FDC0008C2B6 /* Build configuration list for PBXNativeTarget "fyp-evolutionary-art" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB8CFB41CBC4FDC0008C2B6 /* Debug */,
+				FAB8CFB51CBC4FDC0008C2B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAB8CFA01CBC4FDC0008C2B6 /* Project object */;
+}
